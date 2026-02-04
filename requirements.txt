@@ -18,8 +18,8 @@ torchvision>=0.15.0
 
 # Text Processing & Pattern Matching
 regex>=2023.0.0
-python-Levenshtein>=0.21.0
-rapidfuzz>=3.0.0
+python-levenshtein>=0.23.0
+rapidfuzz>=2.13.7
 
 # Utilities
 pyyaml>=6.0
@@ -29,3 +29,5 @@ matplotlib>=3.7.0
 # Optional: For better PDF handling
 poppler-utils>=0.1.0
 
+
+flask

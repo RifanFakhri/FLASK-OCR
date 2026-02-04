@@ -95,15 +95,15 @@ def test_project_files():
     print_header("Testing Project Files")
 
     from pathlib import Path
-    PROJECT_ROOT = Path(__file__).resolve().parents[2]
+    PROJECT_ROOT = Path(__file__).resolve().parent
 
     required_files = [
         PROJECT_ROOT / "requirements.txt",
         PROJECT_ROOT / "README.md",
-        PROJECT_ROOT / "ocr_service" / "app" / "ocr_engine.py",
-        PROJECT_ROOT / "ocr_service" / "app" / "text_parser.py",
-        PROJECT_ROOT / "ocr_service" / "app" / "dataset_handler.py",
-        PROJECT_ROOT / "ocr_service" / "core" / "config.py"
+        PROJECT_ROOT / "ocr_engine.py",
+        PROJECT_ROOT / "text_parser.py",
+        PROJECT_ROOT / "dataset_handler.py",
+        PROJECT_ROOT / "config_loader.py"
     ]
 
     all_ok = True
@@ -122,23 +122,23 @@ def test_directories():
     
     from pathlib import Path
 
-    PROJECT_ROOT = Path(__file__).resolve().parents[2]
+    PROJECT_ROOT = Path(__file__).resolve().parent
 
     required_dirs = [
-        PROJECT_ROOT / "ocr_service" / 'dataset/raw',
-        PROJECT_ROOT / "ocr_service" / 'dataset/output',
-        PROJECT_ROOT / "ocr_service" / 'dataset/annotations',
-        PROJECT_ROOT / "ocr_service" / 'output',
-        PROJECT_ROOT / "ocr_service" / 'logs'
+        PROJECT_ROOT / 'dataset/raw',
+        PROJECT_ROOT / 'dataset/output',
+        PROJECT_ROOT / 'dataset/annotations',
+        PROJECT_ROOT / 'output',
+        PROJECT_ROOT / 'logs'
     ]
     
     all_ok = True
     for directory in required_dirs:
         path = Path(directory)
         if path.exists():
-            print(f"✅ {directory}/")
+            print(f"✅ {directory.relative_to(PROJECT_ROOT)}/")
         else:
-            print(f"⚠️  {directory}/ - Creating...")
+            print(f"⚠️  {directory.relative_to(PROJECT_ROOT)}/ - Creating...")
             path.mkdir(parents=True, exist_ok=True)
     
     return all_ok
@@ -150,10 +150,13 @@ def test_config():
     
     try:
         
-        print("✅ configuration loaded from core.config")
+        print("✅ configuration loaded from config.yaml")
         print(f"   OCR Model: {CONFIG['ocr']['detection_model']}")
         print(f"   Recognition: {CONFIG['ocr']['recognition_model']}")
-        print(f"   Fields configured: {len(CONFIG['parsing']['fields'])}")
+        if 'templates' in CONFIG['parsing']:
+             print(f"   Templates configured: {len(CONFIG['parsing']['templates'])}")
+        elif 'fields' in CONFIG['parsing']:
+             print(f"   Fields configured: {len(CONFIG['parsing']['fields'])}")
         return True
     except Exception as e:
         print(f"❌ Error loading config: {e}")
@@ -163,10 +166,10 @@ def test_modules():
     print_header("Testing Project Modules")
 
     modules = [
-        'ocr_service.app.ocr_engine',
-        'ocr_service.app.text_parser',
-        'ocr_service.app.dataset_handler',
-        'ocr_service.core.config'
+        'ocr_engine',
+        'text_parser',
+        'dataset_handler',
+        'config_loader'
     ]
 
     all_ok = True
