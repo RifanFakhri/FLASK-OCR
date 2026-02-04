@@ -1,0 +1,209 @@
+Found 3 certificates
+==================================================
+
+CERTIFICATE 1/3: TEMPLATE_LAMBUNG
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: HULL
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 049320
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BOJONEGARA & MERAK
+  Confidence: 90.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: 03-09-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY2:
+  Value: 23-09-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 02-NOPEMBER-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: ADINDA WINDU KARSA 2S
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 20805
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 14-10-2025
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Pembaruan Kelas II dua
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 98.20%
+==================================================
+
+CERTIFICATE 2/3: TEMPLATE_MESIN
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: MACH
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 032333
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BOJONEGARA & MERAK
+  Confidence: 90.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: 03-09-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY2:
+  Value: 23-09-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 02-NOPEMBER-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: ADINDA WINDU KARSA
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 20805
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 14-10-2025
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Poros baling-baling Periode survey 5 (lima) tahun
+  Confidence: 93.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 98.20%
+==================================================
+
+CERTIFICATE 3/3: TEMPLATE_MUAT
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: PM39
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 020197
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: JAKARTA
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SURVEY2:
+  Value: 23-09-2020
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 31-OKTOBER-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: ADINDA WINDU KARSA
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 20805
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 14-10-2025
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Tepi atas garis geladak: 0 mm, di bawah sisi atas pelat baja geladak wagon pada sisi kapal, Lambung timbul air laut 1212 mm, air tawar 77 mm
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 92.10%
+==================================================

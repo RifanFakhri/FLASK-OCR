@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Extractor & Certificate Parser | PT Biro Klasifikasi Indonesia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <!-- Logo dari folder images -->
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="PT Biro Klasifikasi Indonesia Logo" class="logo-image">
+            </div>
+            <h1 class="logo-text">PT BIRO KLASIFIKASI INDONESIA</h1>
+            <p class="logo-subtext">OCR Extractor & Certificate Parser System</p>
+        </div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="mainContent">
+        <header class="header">
+            <h1><i class="fas fa-file-contract"></i> OCR Extractor & Certificate Parser</h1>
+            <p>Upload PDF Certificate → OCR Processing → Data Parsing & Extraction</p>
+        </header>
+
+        <main>
+            <form id="ocrForm" enctype="multipart/form-data">
+                <div class="card-wrapper">
+                    <!-- Upload Card -->
+                    <div class="card">
+                        <h3><i class="fas fa-cloud-upload-alt"></i> Upload PDF Certificate</h3>
+                        <div class="upload-area" id="uploadArea">
+                            <i class="fas fa-file-pdf"></i>
+                            <h4>Drag & Drop PDF File Here</h4>
+                            <p>or click to browse (Max size: 10MB)</p>
+                            <input type="file" name="file" id="fileInput" class="file-input" accept=".pdf" required>
+                            <label for="fileInput" class="file-label">Choose File</label>
+                        </div>
+                        <div class="selected-file" id="selectedFile">No file selected</div>
+                    </div>
+
+                    <!-- Parsed Data Card -->
+                    <div class="card">
+                        <h3><i class="fas fa-table"></i> Parsed Certificate Data</h3>
+                        <div class="table-container">
+                            <table id="parsedTable">
+                                <thead></thead>
+                                <tbody>
+                                    <tr><td colspan="3" class="no-data">No data parsed yet. Upload a PDF to begin.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-main" id="submitBtn">
+                    <i class="fas fa-search"></i> Process PDF Certificate
+                </button>
+                
+                <!-- Compare Button (awalnya hidden) -->
+                <div class="action-buttons" style="display: none; gap: 1rem; justify-content: center; margin-top: 1rem;" id="compareContainer">
+                    <a href="#" class="btn-compare" id="compareBtn">
+                        <i class="fas fa-code-compare"></i> Compare with Database
+                    </a>
+                </div>
+            </form>
+
+            <!-- OCR Result Section -->
+            <section class="result-section">
+                <h3><i class="fas fa-align-left"></i> OCR Text per Page</h3>
+                <textarea id="ocrResult" readonly placeholder="OCR results will appear here..."></textarea>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© <span id="currentYear"></span> <span class="footer-logo">PT Biro Klasifikasi Indonesia</span> | Certificate Processing System</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+Found 3 certificates
+==================================================
+
+CERTIFICATE 1/3: TEMPLATE_LAMBUNG
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: HULL
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 034599
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: SEMARANG
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: 2016-12-23
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY2:
+  Value: 2017-01-12
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 2017-03-10
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: DHARMA FERRY-2
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 10542
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 2021-11-17
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Pembaruan Ke: VIII (delapan), No. IMO: 7128095, Ex: SENYO MARU, Jenis: KAPAL PENYEBERANGAN, BRT: 2673, NRT: 802, Dibangun di: JAPAN, Bendera: INDONESIA Pelabuhan Pendaftaran, Pemilik: PT.1 DHARMA LAUTAN UTAMA, Dok Terakhir: 2017-01-12
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 98.40%
+==================================================
+
+CERTIFICATE 2/3: TEMPLATE_MESIN
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: MACH
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 023141
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: SEMARANG
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: 2016-12-23
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY2:
+  Value: 2017-01-12
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 2017-03-10
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: DHARMA FERRY-2
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 10542
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 2021-11-17
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: No. IMO: 7128095, Ex: SENYO MARU Dengsan II, Jenis: KAPAL PENYEBERANGAN, Main Engine: 2 unit, Daya Mesin: 700 HP, Putaran: 840 RPM, Mesin Bantu: 1 unit, Dibangun di: JAPAN, Galangan: NIIGATA Pada 1985 Built at by in Nomor mesin 14523
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 98.40%
+==================================================
+
+CERTIFICATE 3/3: TEMPLATE_MUAT
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: PM39
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 009283
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: SEMARANG
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SURVEY2:
+  Value: 2017-01-12
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 2017-03-10
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: DHARMA FERRY-2
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 10542
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 2021-11-17
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Jenis Kapal: Non Kayu
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 98.50%
+==================================================

@@ -1,0 +1,209 @@
+Found 3 certificates
+==================================================
+
+CERTIFICATE 1/3: TEMPLATE_MESIN
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: MACH
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 040037
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+TGL_SURVEY2:
+  Value: 17-04-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 2024-06-16
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: KALIMANTAN LEADER
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 16116
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 08-04-2029
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Poros baling-baling : Periode survey 5 (lima) tahun
+  Confidence: 93.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 91.90%
+==================================================
+
+CERTIFICATE 2/3: TEMPLATE_LAMBUNG
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: HULL
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 061271
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+TGL_SURVEY2:
+  Value: 17-04-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 2024-06-16
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+NOREG:
+  Value: 16116
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 08-04-2029
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Pembaruan Kelas VII
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 85.60%
+==================================================
+
+CERTIFICATE 3/3: TEMPLATE_MUAT
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: ILLC P88
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 01647
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 80.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SURVEY2:
+  Value: 17-04-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 2025-10-10
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: LL 021
+  Confidence: 85.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 16116
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 08-04-2029
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: air tawar: 121 mm, tepi atas garis geladak: 0 mm, di bawah sisi atas di bawah sisi atas pelat baja geladak ut: pada sisi kapal
+  Confidence: 90.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 78.70%
+==================================================

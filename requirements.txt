@@ -1,0 +1,31 @@
+# OCR and Document Processing
+python-doctr[torch]>=0.7.0
+# Alternative: python-doctr[tf] for TensorFlow backend
+
+# Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+pdf2image>=1.16.3
+pypdfium2>=4.0.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Machine Learning & Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Text Processing & Pattern Matching
+regex>=2023.0.0
+python-Levenshtein>=0.21.0
+rapidfuzz>=3.0.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+
+# Optional: For better PDF handling
+poppler-utils>=0.1.0
+

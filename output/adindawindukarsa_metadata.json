@@ -1,0 +1,168 @@
+{
+  "multiple_certificates": true,
+  "count": 3,
+  "certificates": [
+    {
+      "extracted_fields": {
+        "jenis_sert": "HULL",
+        "nosert": "049320",
+        "divisi": "Surveyor",
+        "lokasi_survey": "BOJONEGARA & MERAK",
+        "tgl_survey1": "03-09-2020",
+        "tgl_survey2": "23-09-2020",
+        "tgl_sert": "02-NOPEMBER-2020",
+        "nmkpl": "ADINDA WINDU KARSA 2S",
+        "noreg": "20805",
+        "tgl_berlaku": "14-10-2025",
+        "mem01": "Pembaruan Kelas II dua",
+        "jenis_survey": "NOT FOUND"
+      },
+      "raw_text": "BIRO KLASIFIKASI INDONESIA SERTIFIKAT KLASIFIKASI LAMBUNG CERTIFICATEOF CLASSIFICATION FOR HULL 1964 No. : 049320 No. Register : 20805 No. IMO 9713789 ADINDA WINDU KARSA 2S Dengan ini diterangkan bahwa KAPAL PENYEBERANGAN PENUMPANG DAN KENDARAAN BAJA This is to certify that above named tersebut diatas telah disurvey dalam rangka SURVEY PEMBARUAN KLAS ship has been surveyedfor pada tanggal 03.09.2020 s/d 23.09.2020 di BOJONEGARA & MERAK oleh Surveyor on at by Surveyors Biro Klasifikasi Indonesia, sesuai dengan, ketentuan-ketentuan Peraturan Biro Klasifikasi Indonesia. to the Biro Klasifikasi Indonesia, in compliance with the requirements oft the Rules of Biro Klasifikasi Indonesia. Pemilik : PT.WINDU KARSA Owner Bendera :INDONESIA Pelabuhan Pendaftaran: JAKARTA Flag Port of Registry Tonase Kotor :9269 Tonase Bersih 3557 Gross Tonnage Net Tonnage Dibangun di :JAPAN oleh: KANDA SHIPBUILDING CO.LTD pada: 2015 Built at by on / Kapal tersebut didaftar dalam Register dengan karakter kelas The vessel will be entered, inRegister with the character A1000L RO-RO Passenger Ship (Enclosed Space) I Ferry dan dinyatakan berlaku sampai Survey Pembaruan Kelas II (dua) pada and willr remain valid until Class Renewal Survey No. on 14 OKTOBER 2025 dengan syarat bahwa survey yang ditentukan dalam Peraturan BKI untuk dapat mempertahankan kelas dipenuhi. provided that surveys as required by the BKI Rules for maintenance ofthe class are fufilled. Tanggal survey alas terakhir 23 SEPTEMBER 2020 Date of last bottom survey Dikeluarkan di JAKARTA,tanggal 02 NOPEMBER 2020 Issuedat on BIRO KLASIFIKASI INDONESIA A.n Direktur Operasi O.bOperation Director Kepala Departemen Operasi Klasifikasi SKP Classification Operation 6 ARIEEBUI DI PERMANA! NUP:42896-KI F31.1.04-2013/Revo 211539\nNama Kapal: : ADINDA WINDU KARSA No. Register: 20805 I SURVEY TAHUNAN LAMEUNG DAN 2 Survey Penge-lokan SURVEY KHUSUS PENUNDAAN PENGEDOLAV TERAPUNG. Kdspatakake Kembal: KELAS PIPERTAHAVEANV DENGANT HHTAN SURVEY a NGEOKAN AGAR DICAESANAFAN FALING CAMBAT 22OOEER 2021 Di MERAK- BANTEN 0 ER MEER. 2021 Di 94 Nopeuba 202) at 3 at JaEmta X 101 2 dyk SURVEYOR: : BAWA FRASETYO SURVEYOR: : Sabaruddun Jur 3 Surwey dan 4 SUREY. KEUSUS VAMBNG, TERAPUNS. Swwlly KEUAS DIPECTAHANEANE: 3 Kds Bpatalankan o E 2022 Di 20 okbbla 2022/DI PMEEAK. SAONEHBER at at Jakant BAKITEKI a VI - 54 Budigy wt SURVEYOR: Sbnaruddwn Nur SURVEYOR: APDIAKSIAH DAHLANI 5 SEY TAHUMAM, ANVTAA VMWVE 6 SURVET VEVIAN ME V6G DAVSEVEY PEVCEDDKANV OANN SSRVCT RENGEDORATS Ks MPYAMAME VEAV ICEVAS OMERVATA NEAJ Di XOMA - 12. WAD Tgl 21 MAMIR 2122 Di JAKATA Tgl 25OPConER 2024 at on at on SURVEYOR SURVEYOR: : 60  : AGUETAN6 7 8 Di Tgl Di Tgl on at on at SURVEYOR : SU JRVEYOR : 9 10 Di Tgl Di Tgl on at on at SURVEYOR : SURVEYOR : F31.1. 04-2013/Rev.0",
+      "confidence_scores": {
+        "jenis_sert": 0.95,
+        "nosert": 0.9,
+        "divisi": 0.95,
+        "lokasi_survey": 0.9,
+        "tgl_survey1": 0.95,
+        "tgl_survey2": 0.95,
+        "tgl_sert": 0.95,
+        "nmkpl": 0.95,
+        "noreg": 0.95,
+        "tgl_berlaku": 0.95,
+        "mem01": 0.95,
+        "jenis_survey": 0.0
+      },
+      "extraction_status": {
+        "jenis_sert": "SUCCESS",
+        "nosert": "SUCCESS",
+        "divisi": "SUCCESS",
+        "lokasi_survey": "SUCCESS",
+        "tgl_survey1": "SUCCESS",
+        "tgl_survey2": "SUCCESS",
+        "tgl_sert": "SUCCESS",
+        "nmkpl": "SUCCESS",
+        "noreg": "SUCCESS",
+        "tgl_berlaku": "SUCCESS",
+        "mem01": "SUCCESS",
+        "jenis_survey": "MISSING_OPTIONAL"
+      },
+      "template_used": "template_lambung",
+      "overall_quality": 0.982,
+      "certificate_type": "lambung",
+      "page_range": [
+        1,
+        2
+      ],
+      "is_valid": true,
+      "validation_errors": []
+    },
+    {
+      "extracted_fields": {
+        "jenis_sert": "MACH",
+        "nosert": "032333",
+        "divisi": "Surveyor",
+        "lokasi_survey": "BOJONEGARA & MERAK",
+        "tgl_survey1": "03-09-2020",
+        "tgl_survey2": "23-09-2020",
+        "tgl_sert": "02-NOPEMBER-2020",
+        "nmkpl": "ADINDA WINDU KARSA",
+        "noreg": "20805",
+        "tgl_berlaku": "14-10-2025",
+        "mem01": "Poros baling-baling Periode survey 5 (lima) tahun",
+        "jenis_survey": "NOT FOUND"
+      },
+      "raw_text": "BIRO KLASIFIKASI INDONESIA SERTIFIKAT KLASIFIKASI MESIN CERTIFICATE OF CLASSIFICATIONFOR. MACHINERY 1964 No. : 032333 No. Register : 20805 No. IMO : 9713789 ADINDA WINDU KARSA Dengan ini diterangkan bahwai instalasi mesin KAPAL PENYEBERANGAN PENUMPANG DAN KENDARAAN I BAJA This is to certif that the undermentioned machineries ofabove named tersebut diatas telah disurvey dalam rangka SURVEY PEMBARUAN KLAS ship has been surveyedfor pada tanggal 03.09.2020 s/d 23.09.2020 di BOJONEGARA & MERAK oleh Surveyor on at by Surveyors Biro Klasifikasi Indonesia, sesuai dengan ketentuan-ketentuan Peraturan Biro Klasifikasi Indonesia. to the Biro Klasifikasi Indonesia, in compliance with the requirements of the Rules of Biro Klasifikasi Indonesia. 1. MESIN UTAMA (Jumlah, merek dan tipe) Main Engine ( Number: license and type) 2 (dua) buah Mesin Diesel DAIHATSU I 6 DKM 26EL - 4 Tak Kerja Tunggal Tenaga efektif 2 x 2600 HP pada putaran 750 Rpm Efective power at Dibangun di JAPAN oleh DAIHATSU DIESEL MFG. CO., LTD. pada 2015 Built at by in No. Mesin DK626E0106 (PA) DK626E0105 (SA) No. 2. MESIN BANTU (Jumlah, merek, tipe dan daya) Auxiliary Engine (Number; license, type and power) 3 (tiga) buah DAIHATSU 6DE18 I 3 x 965 HP Dibangun di JAPAN oleh DAIHATSU DIESEL MFG CO., LTD. pada 2015 Built aty by in Instalasi mesinfersebut akan didaftar dalam Register dengan karakter kelas The machineries will be entered in the Register with the character KSM dan dinyatakan berlaku sampai Survey Pembaruan Kelas pada tanggal and will, remain valid until Class Renewal: Survey on 14 OKTOBER 2025 dengan syarat bahwa survey yang ditentukan dalam Peraturan BKI untuk dapat mempertahankan kelas dipenuhi. provided that surveys as required by the BKI Rulesfor maintenance of the class arefulfilled Poros baling-baling Periode survey 5 (lima) tahun Survey terakhir PS : 23.09.2020 Propeller shaft Periodicity ofs survey Last survey SB : 23.09.2020 Dikeluarkan di JAKARTA.tanggal 02 NOPEMBER 2020 Issued at on BIRO KLASIFIKASI INDONESIA A.n Direktur Operasi O.b Operation Director Kepala Departemen Operasi Klasifikasi SEPClassficaton Operation 6 ARIEFBUD DI PERMANA! NUP:42896-KI F31.1.05-2013/Revo 211540\nNama Kapal : ADINDA WINDU KARSA No. Register: 20805 2 General overhaul mesin induk, & mesin bantu agar dilaksanakan SURVEY TAHUNAN DAN PENJNDAAN paling! lambat 23 September 2021. VISA, NO.1 INSTALASI MESTN TERAPNE, KELAS DIPERTAHANKAN DENGAN CAATAN VISA NO.1AGAR DILAKSANALAN PACING LAMBAT 22 ORTOBER 2021 S Di Bojonegara & Merak Tgl 23 September 2020 Di MERAK-EANTEN 20 SEFIEMBER 2021 at on at Ttd SURVEYOR : BAWA PRASETYO SURVEYOR : BAWA PRASETYO 3 Survey Ehusus nst Meam digtz 4 Suwey Talaman lunst MEm diefsdak dok M/G Ei KKa Ltn A/E No- 1 dan Swwly lyfus 2, % 671 Ca PA. 16 Eap M/ kow aw cyligha Ne.2,4,6 14a (Vo 10504 akam diguka, lengkap R elas e 7 -A a Kan Lembal kelas. ai petabankan . 20 Okbba 2022 Di gl ooPembe 202/Di at ort at Jakant jakata 101 54 hdys 01 y R - SURVEYOR : - 2 Judo dw Nut SURVEYOR: : Nuf Sh 5 Çy TOHVVANV pAMV AMATA 1MTALASI 6 SURVET TAELUNAA Instr. METIN, MBt b ADs S DL ATS OOK KEAS Dbit - AAMEANV CEVAS DIRERPHANEAN Di LAM- K 44D Tgl 2 MpAVAA 29A5 Di JAKANTA Tg25 OTURET 2024 at on at on SURVEYOR : SURVEYOR: : 260 bleig B07M6 7 8 Di Tgl Di Tgl on at on at SURVEYOR : SURVEYOR : 9 10 Di Tgl Di Tgl on at on at SURVEYOR : SURVEYOR: : F31.1 05-2013/Rev.0",
+      "confidence_scores": {
+        "jenis_sert": 0.95,
+        "nosert": 0.9,
+        "divisi": 0.95,
+        "lokasi_survey": 0.9,
+        "tgl_survey1": 0.95,
+        "tgl_survey2": 0.95,
+        "tgl_sert": 0.95,
+        "nmkpl": 0.95,
+        "noreg": 0.95,
+        "tgl_berlaku": 0.95,
+        "mem01": 0.93,
+        "jenis_survey": 0.0
+      },
+      "extraction_status": {
+        "jenis_sert": "SUCCESS",
+        "nosert": "SUCCESS",
+        "divisi": "SUCCESS",
+        "lokasi_survey": "SUCCESS",
+        "tgl_survey1": "SUCCESS",
+        "tgl_survey2": "SUCCESS",
+        "tgl_sert": "SUCCESS",
+        "nmkpl": "SUCCESS",
+        "noreg": "SUCCESS",
+        "tgl_berlaku": "SUCCESS",
+        "mem01": "SUCCESS",
+        "jenis_survey": "MISSING_OPTIONAL"
+      },
+      "template_used": "template_mesin",
+      "overall_quality": 0.982,
+      "certificate_type": "mesin",
+      "page_range": [
+        3,
+        4
+      ],
+      "is_valid": true,
+      "validation_errors": []
+    },
+    {
+      "extracted_fields": {
+        "jenis_sert": "PM39",
+        "nosert": "020197",
+        "divisi": "Surveyor",
+        "lokasi_survey": "JAKARTA",
+        "tgl_survey1": "NOT FOUND",
+        "tgl_survey2": "23-09-2020",
+        "tgl_sert": "31-OKTOBER-2024",
+        "nmkpl": "ADINDA WINDU KARSA",
+        "noreg": "20805",
+        "tgl_berlaku": "14-10-2025",
+        "mem01": "Tepi atas garis geladak: 0 mm, di bawah sisi atas pelat baja geladak wagon pada sisi kapal, Lambung timbul air laut 1212 mm, air tawar 77 mm",
+        "jenis_survey": "NOT FOUND"
+      },
+      "raw_text": "SERTIFIKAT NASIONAL GARIS MUAT KAPAL REPUBLIKI INDONESIA REPUBLIC OF INDONESIA National Load Line Certificate bki No. : 020197 Sesuai dengan: In accordance with Peraturan Menteri Perhubungan PM 39 Tahun 2016 Tentang Garis Muat dan Pemuatan The Minister of Transportation Decree PM: 39 Year 2016 Concerning to the Ship's Load Lines and Stowage berdasarkan wewenang PEMERINTAH REPUBLIK INDONESIA Under the Authority ofthe Government oft the Republic of Indonesia oleh BIRO KLASIFIKASI INDONESIA by Biro Klasifikasi Indonesia Nama Kapal ADINDA WINDU KARSA Tanda Panggilan : YBCU2 Name of Ship Distinctive Number of Letter Pelabuhan Pendaftaran JAKARTA Nomor IMO1 9713789 Port Registry IMO Number Panjang Kapal (L) 104.89 m Tonase kotor (GT) 9269 Sesuai pasal 1 (22) Gross Tonnage Length 46 as defined in Jenis Kapal Tipe B Article 1 (22) Type of Ship Tepi atas garis geladak merupakan titik tolak pengukuran lambung-timbul terletak 0 mm The upper edge of the deck yange from which these freeboards are measured is di bawah sisi atas pelat baja geladak wagon pada sisi kapal at below the top oft the steel wagon deck at side Lambung Timbul dari Garis ke Garis Muat Air Laut (L): 1212 mm Freeboards from upper edge grindal deck line to sea water line (L) Kedudukan garis muat segaris dengan sisi atas yang melalui pusat lingkaran. Position of load line is parallel with the upper edge ya line which is through center of the ring. Pengurangan lambung timbul untuk Air Tawar (T): 77 mm Allowance of freeboard for fresh water (T) - - - - -  1  Tanggal pemeriksaan pertama atau berkala : 23 SEPTEMBER 2020 Date ofi initial or periodic survey Yang bertanda tangan di bawah ini menerangkan, bahwa kapal telah diperiksa dan lambung timbul yang dinyatakan di atas serta marka garis muat ditetapkan sesuai dengan Peraturan Menteri Perhubungan PM 39 Tahun 2016 tentang Garis Muat Kapal dan Pemuatan. This is to certify that this ship has been surveyed and that the freeboards have been assigned and load line shown above have been marked in accordance with the Minister of Transportation Decree PM 39 Year 2016 concerning to the Ship's Load Lines and Stowage Sertifikat ini berlaku sampai pemeriksaan pembaharuan berikutnya, tetapi paling lambat sampai dengan : 14 OKTOBER 2025 This certificate is valid subject to next renewal survey at the latest up to Dikeluarkan di JAKARTA BIRO KLASIFIKAS! INDONESIA Issued at Direktur Tanggal 31 OKTOBER 2024 A.n O.b Operasi Date Operation Director SVP Operasi Bisnis Klasifikasi SVP of Classification Business Operation Catatan : Sertifikat ini diterbitkan sebagai pengganti Sertifikat Nasional Garis Muat Kapal Angkutan Penyeberangan (Perdirjen Hubdat No. KA98APA02DRI62021, No. 9 019567 yang dinyatakan BATAL karena perubahan otorisasi penerbitan sertifikat statutoria dari Ditjen Hubdat ke Ditjen Hubla. ARIEF NURTJAHJO h NUP:42996-KI No. Pengesahan1512120044 Catatan Notes Sertifikat ini untuk kapal berlayar di dalam pelayaran kawasan Indonesia (Inside of near coastal voyage) yang meliputi daerah dibatasi oleh ditarik dari titik Lintang 10°00'00\" Utara di Pantai Barat Malaysia, sepanjang Pantai Malaysia, Singapura, Thailand, Kamboja dan Selatan garis-garis di yang Tiwan dan ditarik antara Tanjung avelaln garis-garis Tanjung Tiwan dengan Tanjung Baturampon di Philipina, sepanjang Pantai Selatan Philipina sampai Tanjung Augustin ke titik aue dan Bujur 140°00'00\" Timur, titik Lintang 02'3500\" Selatan dan Bujur 141-0000\" Timur ditarik ke Selatan hingga ke San titik 09-1000\" Selatan  dan 141°0000'w Timur, ke titik Lintang 10\"00'00\" Selatan dan Bujur 1400000\" Timur ke titik Lintang 10-11'00\" Selatan dan Bujur 121°00'00\" Timur, ke titik Lintang 09*30'00v Selatan dan Bujur 105°00'00\" Timur ke titik Lintang 02°00'00\" Utara dan Bujur 094°00'00\" Timur ke titik 06-30'00\" Utara dan Bujur 09400000\" Timur sampai dengan titik Lintang 10°00'00\" Utara di Pantai Barat Malaysia atau Near Coastal Voyage (sesuai Lintang, tahun 8a PP.51 tentang Perkapalan Pasal ayat b). EA2 10°00'00\"Ni certificate isi intended fors ships engaged on Indonesia waterways (Inside of near Coastal voyage) that covers the areas which are bounded by rhumb lines drawn from in the West Coast Malaysia, along the coast ofA Malaysie, Singapore, Thailand, Cambodia and Tiwan Cape in South Vietnam and rhumb lines drawn Tiwan latitude Cape and Baturampon Cape in The Philippines along the coast of The Philippines San Augustin Cape to thepoint latitude 00°00'00\" 'and 140°00'00\" between E, Latitude 02'3500\"Sa and Longitude 141-0000 Edrawn to South up to point 3 S and Longitude 141-0000'E, top point Latitude 10-0000\" Longitude S and Longitude point point Latitude 101100\"S and Longitude 121-0000\"E, to point Latitude 09 30'00\" S and Longitude 105°0000\" Eto point Latitude 02°0000\"N: and Longitude 094-0000 140-0000\"E E to Eto point Latitude The Government 06'3000-Na and Longitude 094P00O0EUP Year 2002 top point Latitude 10°00'00\" Nin the West Coast Malaysia or Near Coastal Voyage (in accordance with Article 8 paragraph b of Regulation No. 51 about Shipping). 1Sesuai dengan Resolusi IMO A.600(15) Ina accordance with IMO resolution. A.600(15) Notification: 1002313-LL 387251\nCertificate No. 020197 PENGUKUHAN UNTUK PEMERIKSAAN TAHUNAN ENDORSEMENT FOR ANNUAL SURVEYS Dengan ini dinyatakan bahwa pada pemeriksaan tahunanan seperti disyaratkan oleh pasal 37 ayat (3)b dari Peraturan Menteri Perhubungan PM 39 Tahun 2016 ini memenuhi ketentuan. This is to certify that, at an annual surveys required by article 37/3b) of The Minister of Transportation Decree PM 39 year 2016, the ship was found to comply with the relevant requirements. Pemeriksaan Tahunan I Tempat MERAK: - BANTEN Annual Surveyl Place Pemeriksaan tahunan harus dilaksanakan pada tanggal Tanggal 20 September 2021 The annual survey shall be carried out on Date Tanda tangan TTD s/d Signature Until Nama BAWAF PRASETYO Name Pemeriksaan Tahunan II Tempat JAKARTA Annual Survey II Place Pemeriksaan tahunan harus dilaksanakan pada tanggal Tanggal :20 Oktober 2022 The annual survey shall be carried out on Date Tanda tangan TTD s/d Signature Until Nama SYAHARUDDIN NUR Name Pemeriksaan Tahunan II Tempat BATAM - KEPRI Annual Survey III Place Pemeriksaan tahunan harus dilaksanakan pada tanggal Tanggal :21 Nopember 2023 The annual survey shall be carried out on Date Tanda tangan TTD s/d Signature Until Nama AGUSTANG Name Pemeriksaan Tahunan IV Tempat JAKARTA Annual Survey M Place Pemeriksaan tahunan harus dilaksanakan pada tanggal Tanggal 25 Oktober 2024 The annual survey shall be carried out on Date Tanda tangan TTD s/d Signature Until Nama IRWAN EKO SANTOSO Name Karena Peraturan Menteri PM 39 Tahun 2016 telah dipenuhi, maka masa berlaku sertifikat ini The requirement of the Minister of Transportation PM 39 Year 2016 have been complied, the validity of this certificate diperpanjang sampai BIRO KLASIFIKASI INDONESIA extended to Surveyor Biro Klasifikasi Indonesia Tempat Surveyor to Biro Klasifikasi indonesia Place Tanggal Date Catatan Notes 1. Jika suatu kapal bertolak dari pelabuhan yang terletak di sungai atau perairan pedalaman, pemuatan lebih dalam diperbolehkan sesuai dengan berat bahan bakar dan sesuai bahan lain yang perlu untuk pemakaian antara pelabuhan tolak dan laut. When a ship departs from a port situated onz a river ori inland waters, deeper loading shall be permitted corresponding to the weight of fuel and all other materials required for consumption between the point of departure and the sea. 2. Jika suatu kapal berada dalam air tawar dengan berat jenis 1.0 (satu), garis muat bersangkutan boleh terbenam sejumlah penyesuaian untuk air tawar seperti diperlihatkan di atas, jka berat jenis tidak sama dengan 1.0 (satu) penyesuaian harus dibuat sebanding dengan perbedaan 1.025 dan berat jenis yang sebenarnya. When a ship is in fresh water of unit density the appropriate load line may be submerged by the amount oft the fresh water allowance shown rabove. Where the density is other than unity, an allowance shall be made proportional to the difference between 1.025 and the actual density. F33.2.04-2024FRev.7 2/2",
+      "confidence_scores": {
+        "jenis_sert": 0.95,
+        "nosert": 0.9,
+        "divisi": 0.95,
+        "lokasi_survey": 0.95,
+        "tgl_survey1": 0.0,
+        "tgl_survey2": 0.95,
+        "tgl_sert": 0.95,
+        "nmkpl": 0.95,
+        "noreg": 0.95,
+        "tgl_berlaku": 0.95,
+        "mem01": 0.95,
+        "jenis_survey": 0.0
+      },
+      "extraction_status": {
+        "jenis_sert": "SUCCESS",
+        "nosert": "SUCCESS",
+        "divisi": "SUCCESS",
+        "lokasi_survey": "SUCCESS",
+        "tgl_survey1": "NOT_FOUND",
+        "tgl_survey2": "SUCCESS",
+        "tgl_sert": "SUCCESS",
+        "nmkpl": "SUCCESS",
+        "noreg": "SUCCESS",
+        "tgl_berlaku": "SUCCESS",
+        "mem01": "SUCCESS",
+        "jenis_survey": "MISSING_OPTIONAL"
+      },
+      "template_used": "template_muat",
+      "overall_quality": 0.921,
+      "certificate_type": "muat",
+      "page_range": [
+        5,
+        6
+      ],
+      "is_valid": true,
+      "validation_errors": []
+    }
+  ]
+}

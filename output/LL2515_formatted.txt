@@ -1,0 +1,140 @@
+Found 2 certificates
+==================================================
+
+CERTIFICATE 1/2: TEMPLATE_LAMBUNG
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: HULL
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 052952
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: 16-10-2018
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY2:
+  Value: 03-01-2019
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 23-01-2022
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: LL 2515
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 18097
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 03-01-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Pembaruan Kelas III tiga
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 98.40%
+==================================================
+
+CERTIFICATE 2/2: TEMPLATE_MUAT
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: ILLC P88
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 035715
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SURVEY2:
+  Value: 03-01-2019
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 28-10-2019
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: LL 2515
+  Confidence: 85.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 18097
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 03-01-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: air tawar: 77 mm, tepi atas garis geladak: 0 mm, di bawah sisi atas pelat baja geladak utama pada sisi kapal
+  Confidence: 90.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 78.70%
+==================================================

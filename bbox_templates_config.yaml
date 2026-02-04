@@ -1,0 +1,226 @@
+# Bounding Box Template Configuration
+# Template berbasis koordinat untuk extraction field dari posisi tertentu di dokumen
+
+# Page size reference (adjust based on your document size)
+default_page_size:
+  width: 1000
+  height: 1400
+
+# Template 1: Sertifikat Format Standar (Nasional)
+template1:
+  name: "template1"
+  description: "Template untuk sertifikat format standar nasional"
+  page_size:
+    width: 1000
+    height: 1400
+
+  # Define regions with bounding box coordinates
+  # Format: {x1, y1, x2, y2} where (x1,y1) is top-left, (x2,y2) is bottom-right
+  regions:
+    # Jenis Sertifikat - biasanya di header atas
+    jenis_sert:
+      bbox:
+        x1: 100
+        y1: 50
+        x2: 900
+        y2: 150
+      pattern: "(HULL|MACH|PM39|ILLC P88|Lambung|Mesin|Muat)"
+      description: "Header area - certificate type"
+
+    # Nomor Sertifikat - biasanya di bawah header
+    nosert:
+      bbox:
+        x1: 100
+        y1: 150
+        x2: 600
+        y2: 250
+      pattern: '[\w\-\/]{5,30}'
+      description: "Certificate number area"
+
+    # Divisi - area tengah kiri
+    divisi:
+      bbox:
+        x1: 100
+        y1: 300
+        x2: 500
+        y2: 400
+      pattern: '[A-Za-z\s]{5,50}'
+      description: "Division/department area"
+
+    # Lokasi Survey - area tengah
+    lokasi_survey:
+      bbox:
+        x1: 100
+        y1: 400
+        x2: 500
+        y2: 500
+      pattern: '[A-Za-z\s]{3,50}'
+      description: "Survey location area"
+
+    # Tanggal Survey 1 - area tanggal mulai
+    tgl_survey1:
+      bbox:
+        x1: 100
+        y1: 500
+        x2: 400
+        y2: 600
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Survey start date area"
+
+    # Tanggal Survey 2 - area tanggal selesai
+    tgl_survey2:
+      bbox:
+        x1: 400
+        y1: 500
+        x2: 700
+        y2: 600
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Survey end date area"
+
+    # Nama Kapal - area tengah bawah
+    nmkpl:
+      bbox:
+        x1: 100
+        y1: 650
+        x2: 700
+        y2: 750
+      pattern: '[A-Za-z0-9\s]{3,50}'
+      description: "Vessel name area"
+
+    # Nomor Registrasi - area bawah
+    noreg:
+      bbox:
+        x1: 100
+        y1: 750
+        x2: 500
+        y2: 850
+      pattern: '[\w\-\/]{3,30}'
+      description: "Registration number area"
+
+    # Tanggal Berlaku - area footer
+    tgl_berlaku:
+      bbox:
+        x1: 100
+        y1: 900
+        x2: 400
+        y2: 1000
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Valid from date area"
+
+    # Tanggal Berakhir - area footer
+    tgl_berakhir:
+      bbox:
+        x1: 400
+        y1: 900
+        x2: 700
+        y2: 1000
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Valid until date area"
+
+# Template 2: Sertifikat Format Internasional
+template2:
+  name: "template2"
+  description: "Template untuk sertifikat format internasional"
+  page_size:
+    width: 1000
+    height: 1400
+
+  regions:
+    # Jenis Sertifikat - posisi berbeda untuk format internasional
+    jenis_sert:
+      bbox:
+        x1: 50
+        y1: 30
+        x2: 950
+        y2: 120
+      pattern: "(HULL|MACH|PM39|ILLC P88|Hull|Machinery|Load Line)"
+      description: "Header area - certificate type (international format)"
+
+    # Nomor Sertifikat - posisi kanan atas
+    nosert:
+      bbox:
+        x1: 600
+        y1: 120
+        x2: 950
+        y2: 200
+      pattern: '[\w\-\/]{5,30}'
+      description: "Certificate number area (top right)"
+
+    # Divisi - area kiri tengah
+    divisi:
+      bbox:
+        x1: 50
+        y1: 250
+        x2: 500
+        y2: 350
+      pattern: '[A-Za-z\s]{5,50}'
+      description: "Division area (left side)"
+
+    # Lokasi Survey
+    lokasi_survey:
+      bbox:
+        x1: 50
+        y1: 350
+        x2: 500
+        y2: 450
+      pattern: '[A-Za-z\s]{3,50}'
+      description: "Survey location"
+
+    # Tanggal Survey (combined area)
+    tgl_survey1:
+      bbox:
+        x1: 50
+        y1: 450
+        x2: 350
+        y2: 550
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Survey start date"
+
+    tgl_survey2:
+      bbox:
+        x1: 350
+        y1: 450
+        x2: 650
+        y2: 550
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Survey end date"
+
+    # Nama Kapal - center area
+    nmkpl:
+      bbox:
+        x1: 50
+        y1: 600
+        x2: 700
+        y2: 700
+      pattern: '[A-Za-z0-9\s]{3,50}'
+      description: "Vessel name"
+
+    # Nomor Registrasi
+    noreg:
+      bbox:
+        x1: 50
+        y1: 700
+        x2: 500
+        y2: 800
+      pattern: '[\w\-\/]{3,30}'
+      description: "Registration number"
+
+    # Tanggal Berlaku
+    tgl_berlaku:
+      bbox:
+        x1: 50
+        y1: 850
+        x2: 400
+        y2: 950
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Valid from date"
+
+    # Tanggal Berakhir
+    tgl_berakhir:
+      bbox:
+        x1: 400
+        y1: 850
+        x2: 750
+        y2: 950
+      pattern: '\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}'
+      description: "Valid until date"

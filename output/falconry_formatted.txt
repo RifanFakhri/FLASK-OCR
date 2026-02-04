@@ -1,0 +1,209 @@
+Found 3 certificates
+==================================================
+
+CERTIFICATE 1/3: TEMPLATE_LAMBUNG
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: HULL
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 15880
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: CILEGON M
+  Confidence: 90.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+TGL_SURVEY2:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+TGL_SERT:
+  Value: 2020-10-17
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+NOREG:
+  Value: 15880
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+MEM01:
+  Value: Ex: UNISTAR 24526 Dengam im, Jenis: KAPAL TUNDA BAJA This to certip that abone mam, BRT: 550, NRT: 165, Dibangun di: ECHINA hx I Built at Kipal tersebut dida, Bendera: INDONESIA Pelabuhan Pendattaran, Pemilik: PT. BARUNA RAYA LOGISTICS DmeT Bendera INDONESIA Pelabuhan P, Dok Terakhir: 2
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 72.60%
+==================================================
+
+CERTIFICATE 2/3: TEMPLATE_MESIN
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: MACH
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 15880
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: CILEGON M
+  Confidence: 90.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+TGL_SURVEY2:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+TGL_SERT:
+  Value: 2020-10-17
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: FALCONRY
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 15880
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 2025-11-09
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: No. IMO: 9572733, Ex: UNISTAR 24526, Jenis: KAPAL TUNDA BAJA This I Nohs that thr wnlermet, Main Engine: 2 unit, Daya Mesin: 1217 HP, Putaran: 1800 RPM, No Mesin: 33179003, Mesin Bantu: 17 unit, Dibangun di: USA, Galangan: CUMMINS LIMITED pada Buill a by No Mesin 33179003
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 85.40%
+==================================================
+
+CERTIFICATE 3/3: TEMPLATE_MUAT
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: ILLC P88
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 032925
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 80.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: JAKARTA
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SURVEY2:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SERT:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_REQUIRED
+
+NMKPL:
+  Value: FALCONRY
+  Confidence: 85.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 15880
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 2025-11-09
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: Jenis Kapal: Kayu, S: 809, W: 888, WNA: 938
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 60.00%
+==================================================

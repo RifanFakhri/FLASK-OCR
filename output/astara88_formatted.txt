@@ -1,0 +1,140 @@
+Found 2 certificates
+==================================================
+
+CERTIFICATE 1/2: TEMPLATE_LAMBUNG
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: HULL
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 064298
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: Surveyor
+  Confidence: 95.00%
+  Status: SUCCESS
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: 26-02-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY2:
+  Value: 24-07-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: 03-FEBRUARI-2025
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+NOREG:
+  Value: 28322
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 24-07-2029
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: III (tiga) pada on and will remain valid until Class Renewal Survey
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 92.00%
+==================================================
+
+CERTIFICATE 2/2: TEMPLATE_MUAT
+==================================================
+==================================================
+EXTRACTED METADATA
+==================================================
+
+JENIS_SERT:
+  Value: ILLC P88
+  Confidence: 95.00%
+  Status: SUCCESS
+
+NOSERT:
+  Value: 044746
+  Confidence: 90.00%
+  Status: SUCCESS
+
+DIVISI:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+LOKASI_SURVEY:
+  Value: BATAM
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SURVEY1:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: NOT_FOUND
+
+TGL_SURVEY2:
+  Value: 24-07-2024
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_SERT:
+  Value: Tanggal 4nnua Suvey shall be camed out on 22 2o25
+  Confidence: 60.00%
+  Status: SUCCESS
+
+NMKPL:
+  Value: B DENGAN LAMBUNG TIMBUL YANG DIPERKECIL FREEBOARD ASSIGNED AS NEW SHIP TYPE OFS SHIP WITH REDUCED FREEBOARD LAMBUNG TIMBUL DARI GARIS GELADAK GARIS MUAT FREEBOARDI FROM DECK LINE LOAD LINE TROPIK 1130 MM T 89 MM DIATAS S TROPICAL ABOVE MUSIM PANAS 1219 MM S TEPI ATAS GARIS MELALUI PUSAT LINGKARAN SUMMER UPPER EDGE OFL LINE THROUGH CENTER OF RING MUSIM DINGIN 1308 MM W 89 MM DIBAWAH S WINTER BELOW MUSIM DINGIN ATIANTIK UTARA MM WNA MM DIBAWAH S WINTER
+  Confidence: 85.00%
+  Status: SUCCESS
+
+NOREG:
+  Value: 28322
+  Confidence: 95.00%
+  Status: SUCCESS
+
+TGL_BERLAKU:
+  Value: 24-07-2029
+  Confidence: 95.00%
+  Status: SUCCESS
+
+MEM01:
+  Value: diberikan sebagai Kapal Baru Tipe kapal : "B" Dengan lambung timbul yang diperkecil Freeboard assigned as New Ship Type ofs ship with reduced freeboard Lambung timbul dari garis geladak Garis Muat Freeboardi from deck line Load line Tropik 1130 mm (T) 89 mm diatas (S) Tropical above Musim panas 1219 mm (S) Tepi atas garis melalui pusat lingkaran Summer Upper edge ofl line through center of ring Musim dingin 1308 mm (W) 89 mm dibawah (S) Winter below Musim dingin Atiantik Utara mm (WNA) mm dibawah (S) Winter North Atiantic below Tropik kayu mm (LT) mm diatas (LS) above Timber tropical Musim panas kayu mm (LS) mm diatas (S) above Timber summer Musim dingin kayu mm (LW) mm dibawah (LS) below Timber winter Musim dingin. Atlantik Utara kayu mm (LWNA) mm dibawah (LS) Timber winter North Atlantic below Catatan Lambung timbul dan garis muat yang tidak digunakan tidak perlu dimasukkan dalam sertifikat Note Freeboards and joad lines which are nota applicable need noth be entered on certificate Penyesuaian pada air tawar untuk semua lambung timbul selain dari kayu 89 mm. Allowance for fresh water for all freeboards other than timber Untuk lambung timbul kayu mm For timber freeboards Tepi atas garis geladak, dari mana lambung timbul ini diukur berada 0 mm The upper edge oft the deck line from which these freeboards are measured is di bawah sisi atas pelat baja geladak utama pada sisi kapal below the top of steel plate on main deck at side IA A - 1/4 F33.2.09-2024 Rev 05 394999
+  Confidence: 95.00%
+  Status: SUCCESS
+
+JENIS_SURVEY:
+  Value: NOT FOUND
+  Confidence: 0.00%
+  Status: MISSING_OPTIONAL
+
+OVERALL QUALITY: 70.90%
+==================================================

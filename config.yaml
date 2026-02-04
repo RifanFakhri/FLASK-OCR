@@ -1,0 +1,348 @@
+# OCR Configuration
+ocr:
+  # Model selection: 'db_resnet50' (default), 'db_mobilenet_v3_large', etc.
+  detection_model: "db_resnet50"
+  # Recognition model: 'crnn_vgg16_bn', 'crnn_mobilenet_v3_small', 'master', 'sar_resnet31'
+  recognition_model: "crnn_vgg16_bn"
+  # Use GPU if available
+  use_gpu: true
+  # Pretrained weights
+  pretrained: true
+  # Assume straight pages (no rotation)
+  assume_straight_pages: true
+  # Export as straight boxes
+  straighten_pages: false
+  # Preserve aspect ratio
+  preserve_aspect_ratio: true
+  # Symmetric padding
+  symmetric_pad: true
+
+# Image preprocessing
+preprocessing:
+  # Resize images for better OCR (null to keep original size)
+  max_width: 2500
+  max_height: 2500
+  # Image enhancement
+  enhance_contrast: true
+  denoise: true
+  denoise_strength: "medium"
+  adaptive_threshold: true
+  binarization_method: "sauvola"
+  deskew: true
+  # DPI for PDF conversion
+  pdf_dpi: 300
+
+# Text parsing configuration
+parsing:
+  default:
+    confidence_threshold: 0.45
+    fuzzy_threshold: 80
+
+  scan_good:
+    confidence_threshold: 0.50
+    fuzzy_threshold: 85
+
+  scan_poor:
+    confidence_threshold: 0.30
+    fuzzy_threshold: 70
+
+  # Certificate type mapping - maps detected text to certificate codes
+  certificate_type_mapping:
+    "lambung": "HULL"
+    "hull": "HULL"
+    "machinery": "MACH"
+    "mesin": "MACH"
+    "muat nasional": "PM39"
+    "nasional": "PM39"
+    "muat internasional": "ILLC P88"
+    "internasional": "ILLC P88"
+    "load line": "ILLC P88"
+
+  # Template selection - auto-detect which templates to use based on certificate type
+  # Templates: template_lambung, template_mesin, template_muat
+  templates:
+    # Template untuk Sertifikat Lambung (HULL)
+    template_lambung:
+      detection_keywords: ["lambung", "hull"]
+      fields:
+        # Jenis Sertifikat (akan di-map ke HULL)
+        jenis_sert:
+          labels:
+            ["Sertifikat", "Klasifikasi", "Certificate", "lambung", "hull"]
+          pattern: '[A-Za-z\s]{3,50}'
+          required: true
+          map_to_code: true # Will be mapped using certificate_type_mapping
+
+        # Nomor Sertifikat
+        nosert:
+          labels:
+            - No.
+            - Nomor
+            - Number
+            - Certificate No
+          pattern: '[\d\s\-\/A-Z]{3,30}'
+          required: false
+
+        # Divisi yang melakukan survey
+        divisi:
+          labels: ["Pengawas", "Surveyor", "oleh Surveyor", "by Surveyor"]
+          pattern: '[A-Za-z\s]{3,50}'
+          required: false
+
+        # Lokasi Survey
+        lokasi_survey:
+          labels: ["di", "at", "Lokasi", "Location"]
+          pattern: '[A-Za-z\s,]{3,100}'
+          required: false
+
+        # Tanggal Survey Mulai
+        tgl_survey1:
+          labels: ["pada tanggal", "tanggal", "date"]
+          pattern: '\d{1,2}[\.\/\-]\d{1,2}[\.\/\-]\d{2,4}'
+          required: true
+
+        # Tanggal Survey Selesai
+        tgl_survey2:
+          labels: ["s/d", "sampai dengan", "hingga", "to"]
+          pattern: '\d{1,2}[\.\/\-]\d{1,2}[\.\/\-]\s?\d{2,4}'
+          required: true
+
+        # Tanggal Sertifikat
+        tgl_sert:
+          labels: ["Dikeluarkan di", "tanggal", "Issued", "Date"]
+          pattern:
+              - 'Dikeluarkan\s+di\s+[A-Z\s]+,\s*tanggal\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+              - 'Date\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+              - 'Issued\s+at\s+[A-Z\s]+,\s*on\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+          required: true
+
+        # Nama Kapal
+        nmkpl:
+          labels: ["No. IMO", "IMO"]
+          pattern:
+            - 'Nama\s+Kapal\s*[ :\- ]?\s*([A-Z0-9\-\s]+)'
+            - 'Name\s+of\s*Ship\s*[ :\- ]?\s*([A-Z0-9\-\s]+)'
+          required: false
+
+        # Nomor Register
+        noreg:
+          labels:
+            ["No. Register", "Register No", "Registration Number", "Reg No"]
+          pattern: '[\d\s\-\/]{3,30}'
+          required: false
+
+        # Tanggal Berlaku
+        tgl_berlaku:
+          labels: [ "berlaku sampai", "dinyatakan berlaku sampai", "valid until" ]
+          pattern:
+            - 'berlaku\s+sampai.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'valid\s+until.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'pada\s+.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'on\s+.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'dan\s+dinyatakan.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'and\s+will remain.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+          required: true
+
+        # Keterangan/Memo
+        mem01:
+          labels:
+            ["Survey Pembaruan Kelas", "Pembaruan Kelas", "Renewal Survey"]
+          pattern: '[A-Za-z0-9\s\(\)]{5,100}'
+          required: false
+
+    # Template untuk Sertifikat Mesin (MACH)
+    template_mesin:
+      detection_keywords: ["machinery", "mesin"]
+      fields:
+        # Jenis Sertifikat (akan di-map ke MACH)
+        jenis_sert:
+          labels:
+            ["Sertifikat", "Klasifikasi", "Certificate", "machinery", "mesin"]
+          pattern: '[A-Za-z\s]{3,50}'
+          required: true
+          map_to_code: true
+
+        # Nomor Sertifikat
+        nosert:
+          labels:
+              - No.
+              - Nomor
+              - Number
+              - Certificate No
+          pattern: '[\d\s\-\/A-Z]{3,30}'
+          required: false
+
+        # Divisi yang melakukan survey
+        divisi:
+          labels: ["oleh", "by", "Divisi", "Division"]
+          pattern: '[A-Za-z\s]{3,50}'
+          required: false
+
+        # Lokasi Survey
+        lokasi_survey:
+          labels: ["Pelabuhan", "Pendaftaran", "Port", "Registry"]
+          pattern: '[A-Za-z\s,]{3,100}'
+          required: false
+
+        # Tanggal Survey Mulai
+        tgl_survey1:
+          labels: ["pada tanggal", "tanggal", "date", "pada"]
+          pattern: '\d{1,2}[-/\s]\d{1,2}[-/\s]\d{2,4}'
+          required: true
+
+        # Tanggal Survey Selesai
+        tgl_survey2:
+          labels: ["s/d", "sampai dengan", "hingga", "to", "until"]
+          pattern: '\d{1,2}[-/\s]\d{1,2}[-/\s]\d{2,4}'
+          required: true
+
+        # Tanggal Sertifikat
+        tgl_sert:
+          labels: ["tanggal sertifikat", "certificate date", "issued on"]
+          pattern:
+              - 'Dikeluarkan\s+di\s+[A-Z\s]+,\s*tanggal\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+              - 'Date\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+              - 'Issued\s+at\s+[A-Z\s]+,\s*on\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+          required: true
+
+        # Nama Kapal
+        nmkpl:
+          labels: ["Nama Kapal", "Vessel Name", "Ship Name", "Kapal"]
+          pattern:
+            - 'Nama\s+Kapal\s*[ :\- ]?\s*([A-Z0-9\-\s]+)'
+            - 'Name\s+of\s*Ship\s*[ :\- ]?\s*([A-Z0-9\-\s]+)'
+          required: false
+
+        # Nomor Register
+        noreg:
+          labels:
+            ["No. Register", "Register No", "Registration Number", "Reg No"]
+          pattern: '[\d\s\-\/]{3,30}'
+          required: false
+
+        # Tanggal Berlaku
+        tgl_berlaku:
+          labels: [ "berlaku sampai", "dinyatakan berlaku sampai", "valid until" ]
+          pattern:
+            - 'berlaku\s+sampai.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'valid\s+until.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'pada\s+.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'on\s+.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'dan\s+dinyatakan.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'and\s+will remain.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+          required: true
+
+        # Tanggal Expired
+        mem01:
+          labels:
+            ["Poros baling-baling", "Periode survey", "Propeller shaft", "Periodicity of survey"]
+          pattern: '\d{1,2}[-/\s]\d{1,2}[-/\s]\d{2,4}'
+          required: false
+
+    # Template untuk Sertifikat Muat (PM39 atau ILLC P88)
+    template_muat:
+      detection_keywords: ["muat", "load line", "plimsoll"]
+      fields:
+        # Jenis Sertifikat (akan di-map ke PM39 atau ILLC P88 berdasarkan nasional/internasional)
+        jenis_sert:
+          labels:
+            ["Sertifikat", "Klasifikasi", "Certificate", "muat", "load line"]
+          pattern: '[A-Za-z\s]{3,50}'
+          required: true
+          map_to_code: true
+          # Special logic: check for "nasional" or "internasional" in text
+
+        # Nomor Sertifikat
+        nosert:
+          labels:
+              - No.
+              - Nomor
+              - Number
+              - Certificate No
+          pattern: '[\d\s\-\/A-Z]{3,30}'
+          required: false
+
+        # Divisi yang melakukan survey
+        divisi:
+          labels: ["oleh", "by", "Divisi", "Division"]
+          pattern: '[A-Za-z\s]{3,50}'
+          required: false
+
+        # Lokasi Survey
+        lokasi_survey:
+          labels: ["di", "at", "Lokasi", "Location"]
+          pattern: '[A-Za-z\s,]{3,100}'
+          required: false
+
+        # Tanggal Survey Mulai (for Muat: inspection date)
+        tgl_survey1:
+          labels:
+            [
+              "Tanggal pemeriksaan pertama atau berkala",
+              "tanggal pemeriksaan",
+              "inspection date",
+            ]
+          pattern: '\d{1,2}\s[A-Z]{3,9}\s\d{4}|\d{1,2}[-/\s]\d{1,2}[-/\s]\d{2,4}'
+          required: false
+
+        # Tanggal Survey Selesai (not applicable for Muat)
+        tgl_survey2:
+          labels: ["s/d", "sampai dengan", "hingga", "to", "until"]
+          pattern: '\d{1,2}[-/\s]\d{1,2}[-/\s]\d{2,4}'
+          required: false
+
+        # Tanggal Sertifikat (for Muat: issue date)
+        tgl_sert:
+          labels:
+            ["Tanggal", "tanggal sertifikat", "certificate date", "issued on"]
+          pattern:
+              - 'Dikeluarkan\s+di\s+[A-Z\s]+,\s*tanggal\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+              - 'Date\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+              - 'Issued\s+at\s+[A-Z\s]+,\s*on\s+(\d{1,2}\s+[A-Z]+\s+\d{4})'
+          required: true
+
+        # Nama Kapal
+        nmkpl:
+          labels: ["Nama Kapal", "Vessel Name", "Ship Name", "Kapal"]
+          pattern:
+            - 'Nama\s+Kapal\s*[ :\- ]?\s*([A-Z0-9\-\s]+)'
+            - 'Name\s+of\s*Ship\s*[ :\- ]?\s*([A-Z0-9\-\s]+)'
+          required: false
+
+        # Nomor Register
+        noreg:
+          labels:
+            ["No. Register", "Register No", "Registration Number", "Reg No"]
+          pattern: '[\d\s\-\/]{3,30}'
+          required: false
+
+        # Tanggal Berlaku (for Muat: validity end date)
+        tgl_berlaku:
+          labels: [ "berlaku sampai", "dinyatakan berlaku sampai", "valid until" ]
+          pattern:
+            - 'berlaku\s+sampai.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+            - 'valid\s+until.*?(\d{1,2}\s+[A-Z]+\s+\d{4})'
+          required: true
+
+        # Load Line Info (freeboard, saltwater, freshwater)
+        mem01:
+          labels: ["lambung timbul", "freeboard", "air laut", "air tawar"]
+          pattern: ".*"
+          required: false
+
+# Output configuration
+output:
+  # Save extracted text
+  save_raw_text: true
+  # Save parsed metadata as JSON
+  save_metadata_json: true
+  # Save annotated image with bounding boxes
+  save_annotated_image: true
+  # Output directory
+  output_dir: "output"
+
+# Logging
+logging:
+  level: "INFO" # DEBUG, INFO, WARNING, ERROR
+  save_logs: true
+  log_file: "ocr_pipeline.log"
