@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      container-name: py_deploy_staging
+      restart: always
+      ports:
+        - "5193:8000"
+      environment:
+        - ENV = staging
+  db:
+    image: postgres:15
+    ports:
+        "5432:5432"
+    environment:
+      - POSTGRES_DB: ocr_db
+      - POSTGRES_USER = postgres
+      - POSTGRES_PASSWORD: 7Scillan_

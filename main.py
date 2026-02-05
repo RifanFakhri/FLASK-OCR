@@ -24,6 +24,7 @@ from text_parser import TextParser
 from dataset_handler import DatasetHandler
 from bbox_template_manager import BBoxTemplateManager
 from concurrent.futures import ThreadPoolExecutor
+from db_writer import save_parsing_result
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -49,12 +50,12 @@ def run_pipeline(file_path):
         file_path=file_path,
         ocr_engine=ocr_engine,
         text_parser=text_parser,
-        output_dir=None,
-        save_annotated=False,
+        output_dir='output',
+        save_annotated=True,
         use_bbox_template=False
     )
 
-@app.route('/upload', methods=['POST'])
+@app.route('/api/certificate-ocr/upload', methods=['POST'])
 def upload_file():
     file = request.files['file']
     temp_dir = tempfile.mkdtemp()
@@ -64,7 +65,22 @@ def upload_file():
     try:
         future = executor.submit(run_pipeline, file_path)
         result = future.result()  # blocking but safer
-
+        
+        logger.info(f"OCR Result Status: {result.get('status')}")
+        
+        if result.get("status") == "success":
+            logger.info("Attempting to save to database...")
+            try:
+                save_success = save_parsing_result(result)
+                if save_success:
+                    logger.info("✓ Data successfully saved to database")
+                else:
+                    logger.error("✗ Failed to save to database (returned False)")
+            except Exception as db_error:
+                logger.error(f"✗ Exception while saving to database: {db_error}", exc_info=True)
+        else:
+            logger.warning(f"Skipping database save - OCR status is not success: {result.get('status')}")
+        
         session_id = str(uuid4())
 
         OCR_SESSION_STORE[session_id] = {
@@ -495,4 +511,4 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         main()        # CLI mode
     else:
-        app.run(debug=True)
+        app.run(debug=True, host='0.0.0.0', port=5000)

@@ -25,3 +25,5 @@ Thumbs.db
 # OCR output (generated files)
 output/*
 !output/.gitkeep
+
+.env

@@ -29,5 +29,10 @@ matplotlib>=3.7.0
 # Optional: For better PDF handling
 poppler-utils>=0.1.0
 
-
+# Web Framework
 flask
+
+# Database
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+python-dotenv>=1.0.0
